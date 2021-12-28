@@ -1,0 +1,8 @@
+@mixin material-components-style($theme) {
+    $primary: map-get($theme, primary);
+    $accent: map-get($theme, accent);
+
+    .some-class {
+        color: mat-contrast($primary, 200);
+    }
+}

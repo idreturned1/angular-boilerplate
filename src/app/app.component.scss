@@ -1,0 +1,25 @@
+@mixin app-component($theme) {
+    $primary: map-get($theme, primary);
+    $accent: map-get($theme, accent);
+
+    .some-class {
+        color: mat-contrast($primary, 200);
+    }
+}
+
+
+.root-container {
+    min-height: 100vh;
+    max-width: 100%;
+
+    .root {
+        width: 1360px;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .root {
+        width: 90% !important;
+    }
+}

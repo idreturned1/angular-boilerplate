@@ -1,0 +1,28 @@
+/* Juniper, Lynch & Iron Theme Palette */
+
+$juniper-iron-primary: (
+    // fg-primary
+    500: #6d918d,
+    // fg-secondary
+    800: #6f6f6f,
+    // fg-tertiary
+    900: #7f808a,
+    links: #6c749b,
+    contrast: (
+        // bg-primary
+        500: #d0d1d6,
+        // bg-secondary
+        800: #c7c8ce,
+        // bg-tertiary
+        900: #7f808a
+    )
+);
+
+$juniper-iron-accent: (
+    // accent-primary
+    500: #6d918d,
+    contrast: (
+        // accent-secondary
+        500: #6c749b
+    )
+);

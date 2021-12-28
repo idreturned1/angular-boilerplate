@@ -1,0 +1,100 @@
+/** 
+##############################################################
+################ ADD ALL COLOR UTILITIES HERE ################
+#############################################################
+*/
+
+@mixin color-utilities($theme) {
+    $primary: map-get($theme, primary);
+    $accent: map-get($theme, accent);
+
+    $fg-primary: mat-color($primary, 500);
+    $fg-secondary: mat-color($primary, 800);
+    $fg-tertiary: mat-color($primary, 900);
+
+    $bg-primary: mat-contrast($primary, 500);
+    $bg-secondary: mat-contrast($primary, 800);
+    $bg-tertiary: mat-contrast($primary, 900);
+
+    $accent-primary: mat-color($accent, 500);
+    $accent-secondary: mat-contrast($accent, 500);
+    $accent-link: mat-color($primary, links);
+
+    body {
+        background: $bg-primary;
+    }
+
+    /** 
+    ##################################################
+    #################### SCROLLBAR ###################
+    ################################################## 
+    */
+
+    ::-webkit-scrollbar {
+        width: 10px;
+        border: none;
+        border-radius: 20px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: $bg-primary;
+        border: none;
+        border-radius: 20px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: $bg-secondary;
+        border-radius: 20px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: $bg-secondary;
+    }
+
+    /** 
+    ##################################################
+    ################# CUSTOM CLASSES #################
+    ################################################## 
+    */
+
+    // TEXT
+
+    .text-primary {
+        color: $fg-primary;
+    }
+
+    .text-secondary {
+        color: $fg-secondary;
+    }
+
+    .text-tertiary {
+        color: $fg-tertiary;
+    }
+
+    // BACKGROUND
+
+    .bg-primary {
+        background: $bg-primary;
+    }
+
+    .bg-secondary {
+        background: $bg-secondary;
+    }
+
+    .bg-tertiary {
+        background: $bg-tertiary;
+    }
+
+    // BORDER
+
+    .bdr-fg-secondary {
+        border: 2px solid $fg-secondary;
+    }
+
+    // BUTTONS and ICONS
+
+    // CARDS
+}

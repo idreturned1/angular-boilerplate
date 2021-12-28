@@ -1,0 +1,42 @@
+/* All ready-to-use Theme Classes */
+
+@import '../_styles/utilities.scss';
+@import '../_styles/material-components.styles.scss';
+@import '../_styles/custom-components.styles.scss';
+
+@import "~@angular/material/theming";
+@include mat-core();
+
+.golden-charade-theme {
+    @import "./golden-charade/golden-charade.theme.scss";
+
+    $app-primary: mat-palette($golden-charade-primary);
+    $app-accent: mat-palette($golden-charade-accent);
+
+    $app-theme: mat-dark-theme((color: (primary: $app-primary,
+                    accent: $app-accent,
+                ),
+            ));
+
+    @include angular-material-theme($app-theme);
+    @include color-utilities($app-theme);
+    @include material-components-style($app-theme);
+    @include custom-components-style($app-theme);
+}
+
+.juniper-iron-theme {
+    @import "./juniper-iron/juniper-iron.theme.scss";
+
+    $app-primary: mat-palette($juniper-iron-primary);
+    $app-accent: mat-palette($juniper-iron-accent);
+
+    $app-theme: mat-dark-theme((color: (primary: $app-primary,
+                    accent: $app-accent,
+                ),
+            ));
+
+    @include angular-material-theme($app-theme);
+    @include color-utilities($app-theme);
+    @include material-components-style($app-theme);
+    @include custom-components-style($app-theme);
+}

@@ -1,0 +1,28 @@
+/* Golden & Charade Theme Palette */
+
+$golden-charade-primary: (
+    // fg-primary
+    500: #ffffff,
+    // fg-secondary
+    800: #c2c3c8,
+    // fg-tertiary
+    900: #7f808a,
+    links: #ffc25c,
+    contrast: (
+        // bg-primary
+        500: #252734,
+        // bg-secondary
+        800: #333646,
+        // bg-tertiary
+        900: #7f808a
+    )
+);
+
+$golden-charade-accent: (
+    // accent-primary
+    500: #ffc25c,
+    contrast: (
+        // accent-secondary
+        500: #fff
+    )
+);

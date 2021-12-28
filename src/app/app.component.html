@@ -1,0 +1,15 @@
+<!-- Theme Change Button div -->
+<div id="app_theme" [ngClass]="currentTheme">
+
+    <!-- Root Container -->
+    <div class="root-container full-width flex-centered-con pad-vr-32 bg-primary text-primary">
+
+        <!-- Root -->
+        <div class="root full-height mar-top-32">
+            <!-- Button -->
+            <div (click)="toggleTheme()">
+                <button matRaisedButton>Click Me!</button>
+            </div>
+        </div>
+    </div>
+</div>
